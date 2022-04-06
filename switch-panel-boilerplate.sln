@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch-panel-boilerplate", "switch-panel-boilerplate.csproj", "{F660AE3E-25BB-41E7-80EA-475596B48F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F660AE3E-25BB-41E7-80EA-475596B48F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F660AE3E-25BB-41E7-80EA-475596B48F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F660AE3E-25BB-41E7-80EA-475596B48F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F660AE3E-25BB-41E7-80EA-475596B48F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5665DD24-6C50-44BC-8B0B-61E78968F3CA}
+	EndGlobalSection
+EndGlobal
