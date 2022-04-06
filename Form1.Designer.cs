@@ -49,9 +49,7 @@ namespace switch_panel_boilerplate
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 296);
@@ -73,7 +71,7 @@ namespace switch_panel_boilerplate
             this.button_table_panel.ColumnCount = 1;
             this.button_table_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.button_table_panel.Controls.Add(this.button_panel, 0, 0);
-            this.button_table_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_table_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_table_panel.Location = new System.Drawing.Point(0, 296);
             this.button_table_panel.Name = "button_table_panel";
             this.button_table_panel.RowCount = 1;
@@ -102,6 +100,7 @@ namespace switch_panel_boilerplate
             this.back_button.TabIndex = 0;
             this.back_button.Text = "Back";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // next_button
             // 
@@ -113,13 +112,12 @@ namespace switch_panel_boilerplate
             this.next_button.TabIndex = 1;
             this.next_button.Text = "Next";
             this.next_button.UseVisualStyleBackColor = true;
+            this.next_button.Click += new System.EventHandler(this.next_button_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 296);
@@ -140,7 +138,6 @@ namespace switch_panel_boilerplate
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(600, 296);
@@ -164,11 +161,14 @@ namespace switch_panel_boilerplate
             this.ClientSize = new System.Drawing.Size(600, 401);
             this.Controls.Add(this.button_table_panel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Switch Panel";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.button_table_panel.ResumeLayout(false);
             this.button_panel.ResumeLayout(false);
